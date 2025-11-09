@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe | Project by Omar Gufran</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/themes.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <script defer src="../js/theme-toggle.js"></script>
+    <script defer src="../js/main.js"></script>
+    <script defer src="../js/particles.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script defer src="../js/gsap-animations.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/9ee539c65f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="page-transition"></div>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <span class="og-logo">Omar Gufran</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="../resume.html">Resume</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <input type="checkbox" id="modeSwitch">
+                <label for="modeSwitch" class="toggle-label"><i class="fa-solid fa-sun fa-xs"></i><i class="fa-solid fa-moon fa-xs"></i></label>
+            </div>
+        </nav>
+    </header>
+    <canvas id="particle-canvas"></canvas>
+    <section class="project-hero">
+        <h1 class="projecth1">Tic Tac Toe Game</h1>
+        <p>An interactive browser-based game built using HTML, CSS, and JavaScript.</p>
+        <div class="project-buttons">
+            <a href="ttt-preview.html" class="btn-primary">Live Demo</a>
+            <a href="#" class="btn-outline">View on GitHub</a>
+        </div>
+        <div class="project-image">
+            <img src="../assets/screenshots/tic-tac-toe.png" alt="Tic Tac Toe Screenshot">
+        </div>
+    </section>
+    <section class="project-section">
+        <h2>Features</h2>
+        <ul class="feature-list">
+            <li>Interactive grid-based UI</li>
+            <li>Real-time win/draw detection</li>
+            <li>Clean and responsive design</li>
+            <li>Restart game option</li>
+            <li>Player vs Player gameplay</li>
+        </ul>
+    </section>
+    <section class="project-section">
+        <h2>Tech Stack</h2>
+        <div class="stack-list">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+        </div>
+    </section>
+    <section class="project-section">
+        <h2>How It Works</h2>
+        <p>The game uses a 3x3 grid where each cell listens for click events. When clicked, it updates the board state and checks win conditions using predefined winning combinations. If a player wins or the game ends in a draw, a message is displayed and the board resets when the user restarts the game.</p>
+    </section>
+    <section class="project-section">
+        <h2>Challenges</h2>
+        <p>One challenge was implementing clean win detection logic without long repetitive code. This was solved by using an array of winning index combinations and checking the current board state against it.</p>
+    </section>
+    <section class="project-section">
+        <h2>What I Learned</h2>
+        <p>Building this project strengthened my understanding of DOM manipulation, event handling, game logic structuring, and improving clean, modular JavaScript.</p>
+    </section>
+    <footer>
+        <p>Made with ⚡ by OG</p>
+    </footer>
+</body>
+</html>

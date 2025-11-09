@@ -1,0 +1,17 @@
+:root {
+    --bg: #F7F4FF;
+    --text: #000;      
+    --accent: rgba(255, 42, 95, 0.9);
+    --accent2: rgba(255, 42, 95, 0.28);
+}
+body.dark {
+    --bg: #000;               
+    --text: #fff; 
+    --accent: rgba(255, 42, 95, 0.9);
+    --accent2: rgba(255, 42, 95, 0.28);
+}
+body {
+    background: var(--bg);
+    color: var(--text);
+    transition: background 0.7s, color 0.7s;
+}

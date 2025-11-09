@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omar Gufran | Portfolio</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <script defer src="js/theme-toggle.js"></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/particles.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script defer src="js/gsap-animations.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/9ee539c65f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="page-transition"></div>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <span class="og-logo">Omar Gufran</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="active-btn"><a href="resume.html">Resume</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <input type="checkbox" id="modeSwitch">
+                <label for="modeSwitch" class="toggle-label"><i class="fa-solid fa-sun fa-xs"></i><i class="fa-solid fa-moon fa-xs"></i></label>
+            </div>
+            <div class="menu-icon">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <canvas id="particle-canvas"></canvas>
+        <section class="resume-hero">
+            <h1>My Resume</h1>
+            <p>Download or view my resume below.</p>
+            <a class="resume-primary" href="assets/resume/omar_resume.pdf" download>
+                Download Resume
+            </a>
+        </section>
+        <section class="resume-viewer">
+            <iframe src="assets/resume/omar_resume.pdf"></iframe>
+        </section>
+    </main>
+    <footer>
+        <p>Made with ⚡ by OG</p>
+        <div class="footer-socials">
+            <a href="https://github.com/omarbingufran" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/omar-gufran-9136a4385?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a>
+            <a href="mailto:omarbingufran@gmail.com">Email</a>
+        </div>
+    </footer>
+</body>
+</html>
